@@ -25,5 +25,10 @@ int main()
     std::cout << "After pop: ";
     std::cout << queue << std::endl;
 
-    benchmark();
+    std::cout << "If you want to start benchmark work enter 1, else enter 0" << std::endl;
+    int bench = 0;
+    std::cin >> bench;
+    if(bench == 1) {
+        benchmark();
+    }
 }
